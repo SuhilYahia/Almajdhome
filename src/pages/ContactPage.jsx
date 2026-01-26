@@ -16,33 +16,39 @@ export default function ContactPage() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* الهاتف */}
         <div className="bg-white p-6 border border-gray-100">
           <div className="flex items-center gap-3 mb-3">
             <FiPhone className="text-primary-800" />
             <h2 className="font-semibold text-lg">الهاتف / واتساب</h2>
           </div>
-          <p className="text-gray-600">أضف رقمك هنا</p>
-          <p className="text-sm text-gray-500 mt-2">مثال: 05XXXXXXXX</p>
+          <p className="text-gray-600">0558177119</p>
+          <p className="text-sm text-gray-500 mt-2">
+            متاح اتصال وواتساب
+          </p>
         </div>
 
+        {/* العنوان */}
         <div className="bg-white p-6 border border-gray-100">
           <div className="flex items-center gap-3 mb-3">
             <FiMapPin className="text-primary-800" />
             <h2 className="font-semibold text-lg">العنوان</h2>
           </div>
-          <p className="text-gray-600">أضف عنوان المعرض هنا</p>
+          <p className="text-gray-600">
+            حي اليرموك – قبل مطعم العميد
+          </p>
         </div>
 
+        {/* ساعات العمل */}
         <div className="bg-white p-6 border border-gray-100">
           <div className="flex items-center gap-3 mb-3">
             <FiClock className="text-primary-800" />
             <h2 className="font-semibold text-lg">ساعات العمل</h2>
           </div>
-          <p className="text-gray-600">يوميًا: 10:00 ص – 10:00 م</p>
-          <p className="text-sm text-gray-500 mt-2">يمكن تعديلها لاحقًا</p>
+          <p className="text-gray-600">متواجدون دائمًا لخدمتكم، 24 ساعة بلا توقف</p>
+        
         </div>
       </div>
     </div>
   )
 }
-

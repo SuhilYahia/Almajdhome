@@ -146,24 +146,24 @@ const products = [
     featured: false,
   },
   {
-    id: 9,
-    name: "بطانية ناعمة متعددة الاستخدام",
-    description: "بطانية مريحة بخامة ناعمة تمنح دفئًا متوازنًا وملمسًا لطيفًا. مناسبة للاستخدام اليومي في غرف النوم وغرف المعيشة.",
-    price: 22499,
-    rating: 4.6,
-    reviewCount: 29,
-    category: "tables",
-    categoryName: "بطانيات",
-    stock: 12,
-    dimensions: "150 × 200 سم",
-    materials: ["ميكروفايبر", "بوليستر"],
-    colors: ["بيج", "رمادي", "بني"],
-    images: [
-      "/images/products/coffee-table.jpg"
-    ],
-    featured: true,
-  },
-  
+  id: 9,
+  name: "بطانية ناعمة متعددة الاستخدام",
+  description: "بطانية مريحة بخامة ناعمة تمنح دفئًا متوازنًا وملمسًا لطيفًا. مناسبة للاستخدام اليومي في غرف النوم وغرف المعيشة.",
+  price: 22499,
+  rating: 4.6,
+  reviewCount: 29,
+  category: "tables",
+  categoryName: "بطانيات",
+  stock: 12,
+  dimensions: "150 × 200 سم",
+  materials: ["ميكروفايبر", "بوليستر"],
+  colors: ["بيج", "رمادي", "بني"],
+  images: [
+    "/images/products/coffee-table.jpg"
+  ],
+  featured: true,
+},
+
   {
     id: 10,
     name: "مرتبة نوم فاخرة ",
@@ -184,22 +184,23 @@ const products = [
   },
   {
     id: 11,
-    name: "تسريحة أدراج واسعة",
-    description: "تسريحة بأدراج متعددة لتخزين منظم. تصميمها الهادئ ينسجم مع أغلب تنسيقات غرف النوم.",
+    name: "غرفة نوم عصرية فاخرة",
+    description: "غرفة نوم بتصميم عصري مبطن يمنح راحة عالية ومظهرًا أنيقًا. مثالية لخلق أجواء هادئة وفاخرة مع تنسيق متناسق يناسب مختلف الديكورات.",
     price: 37499,
     rating: 4.7,
     reviewCount: 15,
     category: "bedroom",
     categoryName: "غرف نوم",
     stock: 9,
-    dimensions: "58\"W x 18\"D x 32\"H",
-    materials: ["خشب", "MDF"],
-    colors: ["أبيض", "جوزي"],
+    dimensions: "180 × 200 سم",
+    materials: ["قماش مبطن", "هيكل خشبي"],
+    colors: ["بيج", "رمادي فاتح"],
     images: [
       "/images/products/dresser.jpg"
     ],
     featured: false,
   },
+  
   {
     id: 12,
     name: "سجادة بألياف طبيعية",
