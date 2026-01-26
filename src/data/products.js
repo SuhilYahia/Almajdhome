@@ -2,7 +2,7 @@
 const products = [
   {
     id: 1,
-    name: "كرسي استرخاء فاخر",
+    name: "شرشف فاخر",
     description: "كرسي مريح بتفاصيل أنيقة وقاعدة متينة—مثالي لغرفة المعيشة والزوايا الهادئة. تصميمه يجمع بين الراحة والمظهر الراقي.",
     price: 24999,
     rating: 4.7,
@@ -20,8 +20,8 @@ const products = [
   },
   {
     id: 2,
-    name: "كرسي طاولة بتصميم عصري",
-    description: "كرسي بطابع عصري وخطوط نظيفة يمنح مساحة الطعام مظهرًا متوازنًا. مناسب للتنسيقات الحديثة مع راحة جلوس ممتازة.",
+    name: "مخده بتصميم عصري ",
+    description: "مخده بتصميم عصري ",
     price: 3499,
     rating: 4.5,
     reviewCount: 38,
@@ -36,24 +36,25 @@ const products = [
     ],
     featured: true,
   },
-  {
-    id: 3,
-    name: "طاولة طعام بخطوط بسيطة",
-    description: "طاولة طعام أنيقة تناسب التجمعات اليومية وتنسيقات الضيافة. مظهرها العصري يمنح المكان اتساعًا وهدوءًا بصريًا.",
-    price: 4499,
-    rating: 4.8,
-    reviewCount: 26,
-    category: "tables",
-    categoryName: "بطانيات",
-    stock: 10,
-    dimensions: "72\"W x 36\"D x 30\"H",
-    materials: ["خشب", "خشب صلب"],
-    colors: ["خشب طبيعي"],
-    images: [
-      "/images/products/dining-table.jpg"
-    ],
-    featured: true,
-  },
+{
+  id: 3,
+  name: "بطانية فاخرة دافئة",
+  description: "بطانية ناعمة بخامة عالية الجودة توفر دفئًا مثاليًا وراحة يومية. مناسبة لغرف النوم وغرف المعيشة وتمنح إحساسًا بالدفء والنعومة.",
+  price: 4499,
+  rating: 4.8,
+  reviewCount: 26,
+  category: "tables",
+  categoryName: "بطانيات",
+  stock: 10,
+  dimensions: "150 × 200 سم / 200 × 220 سم",
+  materials: ["ميكروفايبر", "بوليستر فاخر"],
+  colors: ["بيج", "رمادي", "كحلي"],
+  images: [
+    "/images/products/dining-table.jpg"
+  ],
+  featured: true,
+},
+
   {
     id: 4,
     name: "مرتبة نوم فاخرة ",
@@ -110,8 +111,8 @@ const products = [
   },
   {
     id: 7,
-    name: "كنبة استرخاء ثلاثية",
-    description: "كنبة بثلاث مقاعد ووسائد مريحة تمنحك جلسة فاخرة. تصميمها المتوازن يناسب المساحات العصرية ويضيف حضورًا قويًا.",
+    name: "شرشف فاخر",
+    description: "شرشف فاخر",
     price: 64999,
     rating: 4.7,
     reviewCount: 48,
@@ -146,22 +147,23 @@ const products = [
   },
   {
     id: 9,
-    name: "طاولة قهوة أنيقة",
-    description: "طاولة قهوة بخطوط نظيفة ورف سفلي للتخزين—تعطي الصالة ترتيبًا وأناقة دون ازدحام بصري.",
+    name: "بطانية ناعمة متعددة الاستخدام",
+    description: "بطانية مريحة بخامة ناعمة تمنح دفئًا متوازنًا وملمسًا لطيفًا. مناسبة للاستخدام اليومي في غرف النوم وغرف المعيشة.",
     price: 22499,
     rating: 4.6,
     reviewCount: 29,
     category: "tables",
     categoryName: "بطانيات",
     stock: 12,
-    dimensions: "47\"W x 24\"D x 16\"H",
-    materials: ["خشب", "زجاج"],
-    colors: ["خشبي/زجاج"],
+    dimensions: "150 × 200 سم",
+    materials: ["ميكروفايبر", "بوليستر"],
+    colors: ["بيج", "رمادي", "بني"],
     images: [
       "/images/products/coffee-table.jpg"
     ],
     featured: true,
   },
+  
   {
     id: 10,
     name: "مرتبة نوم فاخرة ",
@@ -245,6 +247,6 @@ export const getCategories = () => {
     { id: 'bedroom', name: 'غرف نوم' },
     { id: 'rugs', name: 'سجاد' },
   ];
-  
+
   return categories;
 };

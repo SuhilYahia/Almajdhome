@@ -19,7 +19,7 @@ export default function Footer() {
                 <FiInstagram size={20} />
               </a>
             </div>
-            <p className="mt-4 text-sm text-gray-600">
+            <p className="mt-4 text-sm ">
               المجد هوم للمفروشات—تصاميم راقية وجودة عالية تعكس ذوقك. تابع جديدنا وعروضنا عبر قنوات التواصل.
             </p>
             <div className="flex mt-4">
@@ -40,37 +40,37 @@ export default function Footer() {
           <div>
             <h3 className="font-medium text-lg mb-4">عن المجد هوم</h3>
             <ul className="space-y-2">
-              <li><Link to="/" className="text-gray-600 hover:text-primary-800">الرؤية والهوية</Link></li>
-              <li><Link to="/" className="text-gray-600 hover:text-primary-800">الجودة والخامات</Link></li>
-              <li><Link to="/" className="text-gray-600 hover:text-primary-800">التفاصيل والتشطيبات</Link></li>
-              <li><Link to="/contact" className="text-gray-600 hover:text-primary-800">خدمة العملاء</Link></li>
+              <li><Link to="/" className=" hover:text-primary-800">الرؤية والهوية</Link></li>
+              <li><Link to="/" className=" hover:text-primary-800">الجودة والخامات</Link></li>
+              <li><Link to="/" className=" hover:text-primary-800">التفاصيل والتشطيبات</Link></li>
+              <li><Link to="/contact" className=" hover:text-primary-800">خدمة العملاء</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium text-lg mb-4">الكتالوج</h3>
             <ul className="space-y-2">
-              <li><Link to="/catalog" className="text-gray-600 hover:text-primary-800">شراشف</Link></li>
-              <li><Link to="/catalog" className="text-gray-600 hover:text-primary-800">غرف نوم</Link></li>
-              <li><Link to="/catalog" className="text-gray-600 hover:text-primary-800">بطانيات</Link></li>
-              <li><Link to="/catalog" className="text-gray-600 hover:text-primary-800">مراتب</Link></li>
-              <li><Link to="/catalog" className="text-gray-600 hover:text-primary-800">سجاد</Link></li>
+              <li><Link to="/catalog" className=" hover:text-primary-800">شراشف</Link></li>
+              <li><Link to="/catalog" className=" hover:text-primary-800">غرف نوم</Link></li>
+              <li><Link to="/catalog" className=" hover:text-primary-800">بطانيات</Link></li>
+              <li><Link to="/catalog" className=" hover:text-primary-800">مراتب</Link></li>
+              <li><Link to="/catalog" className=" hover:text-primary-800">سجاد</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium text-lg mb-4">روابط سريعة</h3>
             <ul className="space-y-2">
-              <li><Link to="/gallery" className="text-gray-600 hover:text-primary-800">المعرض</Link></li>
-              <li><Link to="/catalog" className="text-gray-600 hover:text-primary-800">الكتالوج</Link></li>
-              <li><Link to="/contact" className="text-gray-600 hover:text-primary-800">تواصل معنا</Link></li>
-              <li><Link to="/" className="text-gray-600 hover:text-primary-800">سياسة الخصوصية</Link></li>
-              <li><Link to="/" className="text-gray-600 hover:text-primary-800">الشروط والأحكام</Link></li>
+              <li><Link to="/gallery" className=" hover:text-primary-800">المعرض</Link></li>
+              <li><Link to="/catalog" className=" hover:text-primary-800">الكتالوج</Link></li>
+              <li><Link to="/contact" className=" hover:text-primary-800">تواصل معنا</Link></li>
+              <li><Link to="/" className=" hover:text-primary-800">سياسة الخصوصية</Link></li>
+              <li><Link to="/" className=" hover:text-primary-800">الشروط والأحكام</Link></li>
             </ul>
           </div>
         </div>
         
-        <div className="border-t border-gray-200 mt-10 pt-6 text-sm text-gray-600">
+        <div className="border-t border-gray-200 mt-10 pt-6 text-sm ">
           <p>© {new Date().getFullYear()} المجد هوم للمفروشات. جميع الحقوق محفوظة.</p>
         </div>
       </div>
