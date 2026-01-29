@@ -18,6 +18,18 @@ export default function ProductDetailPage() {
   }, [product, navigate, productId])
   
   if (!product) return null
+
+  const waLines = [
+    'مرحباً، أود طلب المنتج التالي:',
+    '',
+    `📌 الاسم: ${product.name}`,
+    `📂 القسم: ${product.categoryName || '—'}`,
+  ]
+  if (product.dimensions) waLines.push(`📐 الأبعاد: ${product.dimensions}`)
+  const baseUrl = typeof window !== 'undefined' ? window.location.origin : ''
+  if (baseUrl) waLines.push('', `🔗 الرابط: ${baseUrl}/catalog/${product.id}`)
+  const waMessage = waLines.join('\n')
+  const waHref = `https://wa.me/966558177119?text=${encodeURIComponent(waMessage)}`
   
   const renderStars = (rating) => {
     return Array.from({ length: 5 }, (_, i) => (
@@ -102,9 +114,14 @@ export default function ProductDetailPage() {
           )}
 
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
-            <Link to="/contact" className="btn btn-primary w-full sm:w-auto text-center">
+            <a
+              href={waHref}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-primary w-full sm:w-auto text-center"
+            >
               استفسار عن هذه القطعة
-            </Link>
+            </a>
             <Link to="/gallery" className="btn btn-secondary w-full sm:w-auto text-center">
               مشاهدة تنسيقات مشابهة
             </Link>
