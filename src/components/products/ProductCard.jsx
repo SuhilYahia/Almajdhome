@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { getSiteBaseUrl } from '../../config'
 
 const WHATSAPP_PHONE = '966558177119'
 
@@ -10,7 +11,7 @@ function buildOrderMessage(product) {
     `📂 القسم: ${product.categoryName || '—'}`,
   ]
   if (product.dimensions) lines.push(`📐 الأبعاد: ${product.dimensions}`)
-  const baseUrl = typeof window !== 'undefined' ? window.location.origin : ''
+  const baseUrl = getSiteBaseUrl()
   if (baseUrl) lines.push('', `🔗 الرابط: ${baseUrl}/catalog/${product.id}`)
   return lines.join('\n')
 }

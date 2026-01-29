@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { getProductById } from '../data/products'
+import { getSiteBaseUrl } from '../config'
 import { FiStar } from 'react-icons/fi'
 
 export default function ProductDetailPage() {
@@ -26,7 +27,7 @@ export default function ProductDetailPage() {
     `📂 القسم: ${product.categoryName || '—'}`,
   ]
   if (product.dimensions) waLines.push(`📐 الأبعاد: ${product.dimensions}`)
-  const baseUrl = typeof window !== 'undefined' ? window.location.origin : ''
+  const baseUrl = getSiteBaseUrl()
   if (baseUrl) waLines.push('', `🔗 الرابط: ${baseUrl}/catalog/${product.id}`)
   const waMessage = waLines.join('\n')
   const waHref = `https://wa.me/966558177119?text=${encodeURIComponent(waMessage)}`
