@@ -22,7 +22,14 @@ export default function ContactPage() {
             <FiPhone className="text-primary-800" />
             <h2 className="font-semibold text-lg">الهاتف / واتساب</h2>
           </div>
-          <p className="text-gray-600">0558177119</p>
+          <a
+            href="https://wa.me/966558177119"
+            target="_blank"
+            rel="noreferrer"
+            className="text-gray-600 hover:underline"
+          >
+            0558177119
+          </a>
           <p className="text-sm text-gray-500 mt-2">
             متاح اتصال وواتساب
           </p>

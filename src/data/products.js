@@ -3,15 +3,15 @@ const products = [
   {
     id: 1,
     name: "شرشف فاخر",
-    description: "كرسي مريح بتفاصيل أنيقة وقاعدة متينة—مثالي لغرفة المعيشة والزوايا الهادئة. تصميمه يجمع بين الراحة والمظهر الراقي.",
+    description: "شرشف مريح بتفاصيل أنيقة .",
     price: 24999,
     rating: 4.7,
     reviewCount: 42,
     category: "soft-seating",
     categoryName: "شراشف",
     stock: 15,
-    dimensions: "31.5\"W x 35\"D x 33.5\"H",
-    materials: ["خشب", "قماش", "إسفنج"],
+    dimensions: "200 * 200 ",
+    materials: ["فندقي"],
     colors: ["رمادي", "بيج", "أزرق"],
     images: [
       "/images/products/armchair-gray.jpg"
@@ -55,24 +55,25 @@ const products = [
   featured: true,
 },
 
-  {
-    id: 4,
-    name: "مرتبة نوم فاخرة ",
-    description: "قطعة تخزين عملية بتصميم راقٍ تناسب غرفة الطعام أو الممر. توفر مساحة منظمة مع لمسة فخامة هادئة.",
-    price: 39999,
-    rating: 4.6,
-    reviewCount: 19,
-    category: "storage",
-    categoryName: "مراتب",
-    stock: 8,
-    dimensions: "60\"W x 18\"D x 30\"H",
-    materials: ["خشب", "MDF"],
-    colors: ["جوزي"],
-    images: [
-      "/images/products/sideboard.jpg"
-    ],
-    featured: false,
-  },
+{
+  id: 4,
+  name: "مرتبة نوم فاخرة",
+  description: "مرتبة مريحة توفر دعمًا متوازنًا للجسم أثناء النوم، مصنوعة من مواد عالية الجودة تساعد على توزيع الوزن بشكل صحيح وتمنح نومًا هادئًا ومريحًا.",
+  price: 39999,
+  rating: 4.6,
+  reviewCount: 19,
+  category: "mattresses",
+  categoryName: "مراتب",
+  stock: 8,
+  dimensions: "جميع المقاسات متوفرة",
+  materials: ["إسفنج عالي الكثافة"],
+  colors: ["أبيض"],
+  images: [
+    "/images/products/sideboard.jpg"
+  ],
+  featured: false,
+},
+
   {
     id: 5,
     name: "سرير بتصميم عصري",
